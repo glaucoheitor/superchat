@@ -1,6 +1,6 @@
 # React Firebase Super Chat
 
-> A simple fullstack realtime chat demo with React and Firebase. [Online demo](https://)  
+> A simple fullstack realtime chat demo with React and Firebase. [Online demo](https://superchat-4e1f9.web.app/)  
 > Project to study and practice fullstack apps based on React as frontend and Firebase on the backend
 
 Based on the demo by [Fireshio.io](https://github.com/fireship-io/react-firebase-chat), updated to Firebase v9  

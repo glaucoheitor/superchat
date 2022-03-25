@@ -12,6 +12,7 @@ export default function ChatMessage(props) {
           src={
             photoURL || "https://api.adorable.io/avatars/23/abott@adorable.png"
           }
+          alt="User profile picture"
         />
         <p>{text}</p>
       </div>

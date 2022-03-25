@@ -3,7 +3,7 @@ import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { logEvent } from "firebase/analytics";
 
 export default function SignIn() {
-  const signInWithGoogle = () => {
+  const signInWithGoogle = async () => {
     const provider = new GoogleAuthProvider();
     await signInWithPopup(auth, provider).then((result) => {
       logEvent(analytics, "login");

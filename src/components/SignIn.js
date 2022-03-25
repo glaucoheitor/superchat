@@ -1,10 +1,13 @@
-import { auth } from "../firebase";
+import { auth, analytics } from "../firebase";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { logEvent } from "firebase/analytics";
 
 export default function SignIn() {
   const signInWithGoogle = () => {
     const provider = new GoogleAuthProvider();
-    signInWithPopup(auth, provider);
+    await signInWithPopup(auth, provider).then((result) => {
+      logEvent(analytics, "login");
+    });
   };
 
   return (
